@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as HashRouter, Route } from "react-router-dom";
 import Discover from "./pages/Discover";
 import About from "./pages/About";
 import Search from "./pages/Search";
@@ -9,7 +9,7 @@ import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/react-gh/">
       <div>
         <Navbar />
         <Wrapper>
@@ -20,7 +20,7 @@ function App() {
         </Wrapper>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
